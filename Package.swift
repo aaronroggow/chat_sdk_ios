@@ -15,16 +15,16 @@ let package = Package(
     ],
     dependencies: [
         .package(name: "ZendeskChatProvidersSDK",
-                 url: "https://github.com/zendesk/chat_providers_sdk_ios",
+                 url: "https://github.com/aaronroggow/chat_providers_sdk_ios",
                  .exact("2.11.2")),
         .package(name: "ZendeskMessagingSDK",
-                 url: "https://github.com/zendesk/messaging_sdk_ios",
+                 url: "https://github.com/aaronroggow/messaging_sdk_ios",
                  .exact("3.8.3"))
     ],
     targets: [
         .binaryTarget(
             name: "ZendeskChatSDK",
-            path: "ChatSDK.xcframework"
+            path: "ZendeskChatSDK.xcframework"
         ),
         .target(name: "ZendeskChatSDKTargets",
                 dependencies: [
